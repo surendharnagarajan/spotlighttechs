@@ -1,5 +1,7 @@
 @extends('inc.app', ['slider' => false])
 
+<title>Page Forbidden!</title>
+
 @section('content')
     <!--====== 403 PART START ======-->
 

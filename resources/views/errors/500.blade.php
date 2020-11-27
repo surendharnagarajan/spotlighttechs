@@ -1,5 +1,7 @@
 @extends('inc.app', ['slider' => false])
 
+<title>Internal Server Error!</title>
+
 @section('content')
     <!--====== 500 PART START ======-->
 

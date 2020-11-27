@@ -1,5 +1,7 @@
 @extends('inc.app', ['slider' => false])
 
+<title>Page Not Found!</title>
+
 @section('content')
     <!--====== 404 PART START ======-->
 

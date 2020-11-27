@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\ContactMail;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 use Artesaos\SEOTools\Facades\SEOTools;
+use Illuminate\Support\Facades\Validator;
 
 class PagesController extends Controller
 {
@@ -65,5 +68,32 @@ class PagesController extends Controller
         SEOTools::jsonLd()->addImage(asset('images/spotlight.png'));
         
         return view('contact');
+    }
+
+    public function sendMail(Request $request)
+    {
+        $validator = Validator::make($request->all(), [
+            'name' => 'required',
+            'email' => 'required',
+            'subject' => 'required',
+            'phone' => 'required',
+            'message' => 'required'
+        ]);
+    
+        if ($validator->fails()) {
+            return back()->with('toast_error', $validator->messages()->all()[0])->withInput();
+        }
+
+        $message = [
+            'name' => $request->name,
+            'email' => $request->email,
+            'subject' => $request->subject,
+            'phone' => $request->phone,
+            'message' => $request->message,
+        ];
+
+        Mail::to('info@spotlighttechs.com')->send(new ContactMail($message));
+
+        return redirect('/contact')->with('toast_success', 'Your message has been sent. We will reply soon. Thank you!');
     }
 }

@@ -1,5 +1,7 @@
 @extends('inc.app', ['slider' => false])
 
+<title>Page POST Error!</title>
+
 @section('content')
     <!--====== 419 PART START ======-->
 

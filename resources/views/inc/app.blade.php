@@ -62,6 +62,8 @@
 
     @include('inc.footer')
 
+    @include('sweetalert::alert')
+
     <!--====== jquery js ======-->
     <script src="{{ asset('js/vendor/modernizr-3.6.0.min.js') }}"></script>
     <script src="{{ asset('js/vendor/jquery-1.12.4.min.js') }}"></script>
@@ -87,12 +89,6 @@
 
     <!--====== Count Down js ======-->
     <script src="{{ asset('js/jquery.countdown.min.js') }}"></script>
-
-    <!--====== Validator js ======-->
-    <script src="{{ asset('js/validator.min.js') }}"></script>
-
-    <!--====== Ajax Contact js ======-->
-    <script src="{{ asset('js/ajax-contact.js') }}"></script>
 
     <!--====== Main js ======-->
     <script src="{{ asset('js/main.js') }}"></script>

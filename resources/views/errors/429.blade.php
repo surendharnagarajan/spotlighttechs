@@ -1,5 +1,7 @@
 @extends('inc.app', ['slider' => false])
 
+<title>Page Too Many Requests!</title>
+
 @section('content')
     <!--====== 429 PART START ======-->
 

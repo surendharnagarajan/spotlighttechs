@@ -44,6 +44,11 @@ return [
             'timeout' => null,
             'auth_mode' => null,
         ],
+        'from' => [
+            'address' => env('MAIL_FROM_ADDRESS', 'info@spotlighttechs.com'),
+            'name' => env('MAIL_FROM_NAME', 'spotlighttech'),
+        ],
+        
 
         'ses' => [
             'transport' => 'ses',

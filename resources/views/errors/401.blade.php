@@ -1,5 +1,7 @@
 @extends('inc.app', ['slider' => false])
 
+<title>Page Unauthorised!</title>
+
 @section('content')
     <!--====== 401 PART START ======-->
 

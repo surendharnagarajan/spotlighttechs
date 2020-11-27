@@ -35,36 +35,32 @@
                         <h2>Keep in touch</h2>
                     </div> <!-- section title -->
                     <div class="main-form pt-45">
-                        <form id="contact-form" action="#" method="post" data-toggle="validator">
+                        <form action="{{ route('send.mail') }}" method="POST">
+                            @csrf
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="singel-form form-group">
-                                        <input name="name" type="text" placeholder="Your name" data-error="Name is required." required="required">
-                                        <div class="help-block with-errors"></div>
+                                        <input name="name" type="text" placeholder="Your name" required="required">
                                     </div> <!-- singel form -->
                                 </div>
                                 <div class="col-md-6">
                                     <div class="singel-form form-group">
-                                        <input name="email" type="email" placeholder="Email" data-error="Valid email is required." required="required">
-                                        <div class="help-block with-errors"></div>
+                                        <input name="email" type="email" placeholder="Email" required="required">
                                     </div> <!-- singel form -->
                                 </div>
                                 <div class="col-md-6">
                                     <div class="singel-form form-group">
-                                        <input name="subject" type="text" placeholder="Subject" data-error="Subject is required." required="required">
-                                        <div class="help-block with-errors"></div>
+                                        <input name="subject" type="text" placeholder="Subject" required="required">
                                     </div> <!-- singel form --> 
                                 </div>
                                 <div class="col-md-6">
                                     <div class="singel-form form-group">
-                                        <input name="phone" type="text" placeholder="Phone" data-error="Phone is required." required="required">
-                                        <div class="help-block with-errors"></div>
+                                        <input name="phone" type="text" placeholder="Phone" required="required">
                                     </div> <!-- singel form -->
                                 </div>
                                 <div class="col-md-12">
                                     <div class="singel-form form-group">
-                                        <textarea name="messege" placeholder="Messege" data-error="Please,leave us a message." required="required"></textarea>
-                                        <div class="help-block with-errors"></div>
+                                        <textarea name="message" placeholder="Message" required="required"></textarea>
                                     </div> <!-- singel form -->
                                 </div>
                                 <p class="form-message"></p>
@@ -112,7 +108,7 @@
                                 </div>
                                 <div class="cont">
                                     <p><a class="text-dark" href="mailto:spotlighttechs@gmail.com">spotlighttechs@gmail.com</a></p>
-                                    <p><a class="text-dark" href="info@spotlighttechs.com">info@spotlighttechs.com</a></p>
+                                    <p><a class="text-dark" href="mailto:info@spotlighttechs.com">info@spotlighttechs.com</a></p>
                                 </div>
                             </div> <!-- singel address -->
                         </li>
@@ -122,7 +118,7 @@
                                     <i class="fa fa-globe"></i>
                                 </div>
                                 <div class="cont">
-                                    <p>www.spotlighttechs.com</p>
+                                    <p><a class="text-dark" href="https://www.spotlighttechs.com">www.spotlighttechs.com</a></p>
                                 </div>
                             </div> <!-- singel address -->
                         </li>

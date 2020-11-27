@@ -1,5 +1,7 @@
 @extends('inc.app', ['slider' => false])
 
+<title>Service Unavailable!</title>
+
 @section('content')
     <!--====== 503 PART START ======-->
 
