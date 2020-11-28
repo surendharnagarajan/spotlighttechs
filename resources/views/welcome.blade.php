@@ -15,7 +15,7 @@
                     <div class="col-lg-6 offset-lg-1 col-md-8 offset-md-2 col-sm-8 offset-sm-2 col-8 offset-2">
                         <div class="row category-slied mt-40">
                             <div class="col-lg-4">
-                                <a href="#">
+                                <a href="{{ route('mechanical') }}">
                                     <span class="singel-category text-center color-1">
                                         <span class="icon">
                                             <img src="{{ asset('images/home/cogs-solid.svg') }}" width="500" height="100" alt="Mechanical">
@@ -27,7 +27,7 @@
                                 </a>
                             </div>
                             <div class="col-lg-4">
-                                <a href="#">
+                                <a href="{{ route('civil') }}">
                                     <span class="singel-category text-center color-2">
                                         <span class="icon">
                                             <img src="{{ asset('images/home/city-solid.svg') }}" width="500" height="100" alt="Civil">
@@ -39,7 +39,7 @@
                                 </a>
                             </div>
                             <div class="col-lg-4">
-                                <a href="#">
+                                <a href="{{ route('programming') }}">
                                     <span class="singel-category text-center color-3">
                                         <span class="icon">
                                             <img src="{{ asset('images/home/laptop-solid.svg') }}" width="500" height="100" alt="CSE / IT / EEE / ECE">
@@ -70,18 +70,14 @@
                         <h2>Welcome to Spotlight Tech </h2>
                     </div> <!-- section title -->
                     <div class="about-cont">
-                        <p>Lorem ipsum gravida nibh vel velit auctor aliquetn sollicitudirem quibibendum auci elit cons
-                            equat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet . Morbi
-                            accumsan ipsum velit. Nam nec tellus a odio tincidunt mauris. <br> <br> auci elit cons equat
-                            ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet . Morbi
-                            accumsan ipsum velit. Nam nec tellus a odio tincidunt mauris</p>
-                        <a href="#" class="main-btn mt-55">Learn More</a>
+                        <p>Upon successful completion of assessment of their potentials and experiences in learnings, employment opportunities and demands in the market, the well developed and multi-designed syllabus helps candidates completing their courses successfully. It also develops skill up-gradation, building of new skills not only for existing jobs but also jobs that are to be created. Once completed and certified, they are provided placement assistance.</p>
+                        <a href="{{ route('about') }}" class="main-btn mt-55">Learn More</a>
                     </div>
                 </div> <!-- about cont -->
             </div> <!-- row -->
         </div> <!-- container -->
         <div class="about-bg">
-            <img src="images/about/bg-1.png" alt="About">
+            <img src="{{ asset('images/about/bg-1.png') }}" alt="About">
         </div>
     </section>
 
@@ -96,9 +92,8 @@
                     <div class="col-lg-12">
                         <div class="apply-cont apply-color-1">
                             <h3>Apply for course</h3>
-                            <p>Gravida nibh vel velit auctor aliquetn sollicitudirem sem quibibendum auci elit cons equat
-                                ipsutis sem nibh id elituis sed odio sit amet nibh vulputate cursus equat ipsutis.</p>
-                            <a href="#" class="main-btn">Apply Now</a>
+                            <p>This is achieved by providing high quality education, Government Recognized Certifications, Cisco Certifications through qualified trainers and maintaining good quality culture.</p>
+                            <a href="{{ route('courses') }}" class="main-btn">Course Enquiry</a>
                         </div> <!-- apply cont -->
                     </div>
                 </div>
@@ -140,7 +135,7 @@
                                 <li><i class="fa fa-star"></i></li>
                             </ul>
                             <span>(42 Reviws)</span>
-                            <a href="courses-singel.html">
+                            <a href="{{ route('mechanical') }}">
                                 <h4>Mechanical Courses</h4>
                             </a>
                             <div class="course-teacher">
@@ -180,7 +175,7 @@
                                 <li><i class="fa fa-star"></i></li>
                             </ul>
                             <span>(29 Reviws)</span>
-                            <a href="courses-singel.html">
+                            <a href="{{ route('civil') }}">
                                 <h4>Civil Courses</h4>
                             </a>
                             <div class="course-teacher">
@@ -220,7 +215,7 @@
                                 <li><i class="fa fa-star"></i></li>
                             </ul>
                             <span>(84 Reviws)</span>
-                            <a href="courses-singel.html">
+                            <a href="{{ route('programming') }}">
                                 <h4>CSE/IT/EEE/ECE Courses</h4>
                             </a>
                             <div class="course-teacher">
@@ -267,7 +262,7 @@
                             <li>
                                 <div class="singel-feature">
                                     <div class="icon">
-                                        <img src="images/all-icon/f-1.png" alt="icon">
+                                        <img src="{{ asset('images/all-icon/f-1.png') }}" alt="icon">
                                     </div>
                                     <div class="cont">
                                         <h4>Global Certificate</h4>
@@ -279,7 +274,7 @@
                             <li>
                                 <div class="singel-feature">
                                     <div class="icon">
-                                        <img src="images/all-icon/f-2.png" alt="icon">
+                                        <img src="{{ asset('images/all-icon/f-2.png') }}" alt="icon">
                                     </div>
                                     <div class="cont">
                                         <h4>Alumni Support</h4>
@@ -291,7 +286,7 @@
                             <li>
                                 <div class="singel-feature">
                                     <div class="icon">
-                                        <img src="images/all-icon/f-3.png" alt="icon">
+                                        <img src="{{ asset('images/all-icon/f-3.png') }}" alt="icon">
                                     </div>
                                     <div class="cont">
                                         <h4>Books & Library</h4>
@@ -317,16 +312,11 @@
             <div class="row">
                 <div class="col-lg-5">
                     <div class="section-title mt-50">
-                        <h5>Featured Teachers</h5>
-                        <h2>Meet Our teachers</h2>
+                        <h2>Meet Our founders</h2>
                     </div> <!-- section title -->
                     <div class="teachers-cont">
-                        <p>Lorem ipsum gravida nibh vel velit auctor aliquetn sollicitudirem quibibendum auci elit cons
-                            equat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet . Morbi
-                            accumsan ipsum velit. Nam nec tellus a odio tincidunt mauris. <br> <br> auci elit cons equat
-                            ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet . Morbi
-                            accumsan ipsum velit. Nam nec tellus a odio tincidunt mauris</p>
-                        <a href="#" class="main-btn mt-55">Career with us</a>
+                        <p>Spotlight Tech is committed for satisfying the needs and expectations of all stakeholders such as Students, Parents, Employees and the Society.</p>
+                        <a href="{{ route('about') }}" class="main-btn mt-55">learns more</a>
                     </div> <!-- teachers cont -->
                 </div>
                 <div class="col-lg-6 offset-lg-1">
@@ -335,7 +325,7 @@
                             <div class="col-sm-6">
                                 <div class="singel-teachers mt-30 text-center">
                                     <div class="image">
-                                        <img src="images/teachers/t-1.jpg" alt="Teachers">
+                                        <img src="{{ asset('images/teachers/t-1.jpg') }}" alt="Teachers">
                                     </div>
                                     <div class="cont">
                                         <a href="teachers-singel.html">
@@ -348,7 +338,7 @@
                             <div class="col-sm-6">
                                 <div class="singel-teachers mt-30 text-center">
                                     <div class="image">
-                                        <img src="images/teachers/t-2.jpg" alt="Teachers">
+                                        <img src="{{ asset('images/teachers/t-2.jpg') }}" alt="Teachers">
                                     </div>
                                     <div class="cont">
                                         <a href="teachers-singel.html">
@@ -361,7 +351,7 @@
                             <div class="col-sm-6">
                                 <div class="singel-teachers mt-30 text-center">
                                     <div class="image">
-                                        <img src="images/teachers/t-3.jpg" alt="Teachers">
+                                        <img src="{{ asset('images/teachers/t-3.jpg') }}" alt="Teachers">
                                     </div>
                                     <div class="cont">
                                         <a href="teachers-singel.html">
@@ -374,7 +364,7 @@
                             <div class="col-sm-6">
                                 <div class="singel-teachers mt-30 text-center">
                                     <div class="image">
-                                        <img src="images/teachers/t-4.jpg" alt="Teachers">
+                                        <img src="{{ asset('images/teachers/t-4.jpg') }}" alt="Teachers">
                                     </div>
                                     <div class="cont">
                                         <a href="teachers-singel.html">
@@ -410,7 +400,7 @@
                 <div class="col-lg-6">
                     <div class="singel-testimonial">
                         <div class="testimonial-thum">
-                            <img src="images/testimonial/t-1.jpg" alt="Testimonial">
+                            <img src="{{ asset('images/testimonial/t-1.jpg') }}" alt="Testimonial">
                             <div class="quote">
                                 <i class="fa fa-quote-right"></i>
                             </div>
@@ -426,7 +416,7 @@
                 <div class="col-lg-6">
                     <div class="singel-testimonial">
                         <div class="testimonial-thum">
-                            <img src="images/testimonial/t-2.jpg" alt="Testimonial">
+                            <img src="{{ asset('images/testimonial/t-2.jpg') }}" alt="Testimonial">
                             <div class="quote">
                                 <i class="fa fa-quote-right"></i>
                             </div>
@@ -442,7 +432,7 @@
                 <div class="col-lg-6">
                     <div class="singel-testimonial">
                         <div class="testimonial-thum">
-                            <img src="images/testimonial/t-3.jpg" alt="Testimonial">
+                            <img src="{{ asset('images/testimonial/t-3.jpg') }}" alt="Testimonial">
                             <div class="quote">
                                 <i class="fa fa-quote-right"></i>
                             </div>
@@ -468,32 +458,32 @@
             <div class="row patnar-slied">
                 <div class="col-lg-12">
                     <div class="singel-patnar text-center mt-40">
-                        <img src="images/patnar-logo/p-1.png" alt="Logo">
+                        <img src="{{ asset('images/patnar-logo/p-1.png') }}" alt="Logo">
                     </div>
                 </div>
                 <div class="col-lg-12">
                     <div class="singel-patnar text-center mt-40">
-                        <img src="images/patnar-logo/p-2.png" alt="Logo">
+                        <img src="{{ asset('images/patnar-logo/p-2.png') }}" alt="Logo">
                     </div>
                 </div>
                 <div class="col-lg-12">
                     <div class="singel-patnar text-center mt-40">
-                        <img src="images/patnar-logo/p-3.png" alt="Logo">
+                        <img src="{{ asset('images/patnar-logo/p-3.png') }}" alt="Logo">
                     </div>
                 </div>
                 <div class="col-lg-12">
                     <div class="singel-patnar text-center mt-40">
-                        <img src="images/patnar-logo/p-4.png" alt="Logo">
+                        <img src="{{ asset('images/patnar-logo/p-4.png') }}" alt="Logo">
                     </div>
                 </div>
                 <div class="col-lg-12">
                     <div class="singel-patnar text-center mt-40">
-                        <img src="images/patnar-logo/p-2.png" alt="Logo">
+                        <img src="{{ asset('images/patnar-logo/p-2.png') }}" alt="Logo">
                     </div>
                 </div>
                 <div class="col-lg-12">
                     <div class="singel-patnar text-center mt-40">
-                        <img src="images/patnar-logo/p-3.png" alt="Logo">
+                        <img src="{{ asset('images/patnar-logo/p-3.png') }}" alt="Logo">
                     </div>
                 </div>
             </div> <!-- row -->

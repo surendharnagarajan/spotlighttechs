@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Mail\ContactMail;
+use App\Mail\EnquireMail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use Artesaos\SEOTools\Facades\SEOTools;
@@ -45,6 +46,82 @@ class PagesController extends Controller
 
         return view('courses');
     }
+
+    public function mechanical() {
+        SEOTools::setTitle('Mechanical Courses - Spotlight Tech');
+        SEOTools::setDescription('This is my page description');
+        SEOTools::opengraph()->setUrl('https://spotlighttechs.com/course/mechanical');
+        SEOTools::setCanonical('https://spotlighttechs.com/course/mechanical');
+        SEOTools::opengraph()->addProperty('type', 'Mechanical Courses - Spotlight Tech');
+        SEOTools::twitter()->setSite('@LuizVinicius73');
+        SEOTools::jsonLd()->addImage(asset('images/spotlight.png'));
+
+        return view('mechanical');
+    }
+
+    public function civil() {
+        SEOTools::setTitle('Civil Courses - Spotlight Tech');
+        SEOTools::setDescription('This is my page description');
+        SEOTools::opengraph()->setUrl('https://spotlighttechs.com/course/civil');
+        SEOTools::setCanonical('https://spotlighttechs.com/course/civil');
+        SEOTools::opengraph()->addProperty('type', 'Civil Courses - Spotlight Tech');
+        SEOTools::twitter()->setSite('@LuizVinicius73');
+        SEOTools::jsonLd()->addImage(asset('images/spotlight.png'));
+
+        return view('civil');
+    }
+
+    public function programming() {
+        SEOTools::setTitle('CSE/IT/EEE/ECE Courses - Spotlight Tech');
+        SEOTools::setDescription('This is my page description');
+        SEOTools::opengraph()->setUrl('https://spotlighttechs.com/course/programming');
+        SEOTools::setCanonical('https://spotlighttechs.com/course/programming');
+        SEOTools::opengraph()->addProperty('type', 'CSE/IT/EEE/ECE Courses - Spotlight Tech');
+        SEOTools::twitter()->setSite('@LuizVinicius73');
+        SEOTools::jsonLd()->addImage(asset('images/spotlight.png'));
+
+        return view('programming');
+    }
+
+    public function enquiry(Request $request, $id) {
+        SEOTools::setTitle('Course enquiry - Spotlight Tech');
+        SEOTools::setDescription('This is my page description');
+        SEOTools::opengraph()->setUrl('https://spotlighttechs.com/enquiry');
+        SEOTools::setCanonical('https://spotlighttechs.com/enquiry');
+        SEOTools::opengraph()->addProperty('type', 'Course enquiry - Spotlight Tech');
+        SEOTools::twitter()->setSite('@LuizVinicius73');
+        SEOTools::jsonLd()->addImage(asset('images/spotlight.png'));
+        
+        return view('enquiry', ['course' => $id]);
+    }
+
+    public function enquiryMail(Request $request)
+    {
+        $validator = Validator::make($request->all(), [
+            'name' => 'required',
+            'email' => 'required',
+            'phone' => 'required',
+            'course' => 'required',
+            'message' => 'required'
+        ]);
+    
+        if ($validator->fails()) {
+            return back()->with('toast_error', $validator->messages()->all()[0])->withInput();
+        }
+
+        $message = [
+            'name' => $request->name,
+            'email' => $request->email,
+            'phone' => $request->phone,
+            'course' => $request->course,
+            'message' => $request->message,
+        ];
+
+        Mail::to('info@spotlighttechs.com')->send(new EnquireMail($message));
+
+        return redirect('/courses')->with('toast_success', 'Your enquiry request has been sent. We will reply soon. Thank you!');
+    }
+
 
     public function blog() {
         SEOTools::setTitle('Blog - Spotlight Tech');

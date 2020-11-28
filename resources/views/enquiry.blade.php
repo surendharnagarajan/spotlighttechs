@@ -8,11 +8,11 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="page-banner-cont">
-                    <h2>Contact</h2>
+                    <h2>Course Enquiry</h2>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="{{ route('home') }}">Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Contact</li>
+                            <li class="breadcrumb-item active" aria-current="page">Course Enquiry</li>
                         </ol>
                     </nav>
                 </div>  <!-- page banner cont -->
@@ -31,11 +31,10 @@
             <div class="col-lg-8">
                 <div class="contact-from">
                     <div class="section-title">
-                        <h5>Contact Us</h5>
-                        <h2>Keep in touch</h2>
+                        <h5>Course Enquiry</h5>
                     </div> <!-- section title -->
                     <div class="main-form pt-45">
-                        <form action="{{ route('send.mail') }}" method="POST">
+                        <form action="{{ route('enquiry.mail') }}" method="POST">
                             @csrf
                             <div class="row">
                                 <div class="col-md-6">
@@ -50,12 +49,49 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="singel-form form-group">
-                                        <input name="subject" type="text" placeholder="Subject" required="required">
-                                    </div> <!-- singel form --> 
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="singel-form form-group">
                                         <input name="phone" type="text" placeholder="Phone" required="required">
+                                    </div> <!-- singel form -->
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="singel-form form-group">
+                                        <select id="course" name="course" placeholder="Courses" required="required">
+                                            <option>Courses</option>
+                                            @if ($course == 'mechanical')
+                                            <option value="AUTOCAD">AUTOCAD</option>
+                                            <option value="CREO PARAMETRIC">CREO PARAMETRIC</option>
+                                            <option value="SOLIDWORKS">SOLIDWORKS</option>
+                                            <option value="PLASTIC MOLDING">PLASTIC MOLDING</option>
+                                            <option value="CATIA V5">CATIA V5</option>
+                                            <option value="NX CAD">NX CAD</option>
+                                            <option value="NX CAM">NX CAM</option>
+                                            <option value="3D PRINTING">3D PRINTING</option>
+                                            <option value="GD & T">GD & T</option>
+                                            @endif
+                                            @if ($course == 'civil')
+                                            <option value="AUTOCAD">AUTOCAD</option>
+                                            <option value="REVIT ARCHITECTURE">REVIT ARCHITECTURE</option>
+                                            <option value="SKETCHUP">SKETCHUP</option>
+                                            <option value="3DS MAX">3DS MAX</option>
+                                            <option value="STAAD PRO">STAAD PRO</option>
+                                            <option value="ETABS">ETABS</option>
+                                            <option value="MSP PPM">MSP PPM</option>
+                                            <option value="PRIMAVERA P6">PRIMAVERA P6</option>
+                                            <option value="LAND SURVEY">LAND SURVEY</option>
+                                            @endif
+                                            @if ($course == 'programming')
+                                            <option value="C, C++, JAVA">C, C++, JAVA</option>
+                                            <option value="PYTHON">PYTHON</option>
+                                            <option value="ARTIFICIAL INTELLIGENCE">ARTIFICIAL INTELLIGENCE</option>
+                                            <option value="MACHINE LEARNING">MACHINE LEARNING</option>
+                                            <option value="IOT">IOT</option>
+                                            <option value="CYPER SECURITY">CYPER SECURITY</option>
+                                            <option value="ETHICAL HACKING">ETHICAL HACKING</option>
+                                            <option value="AUTOCAD ELECTRICAL">AUTOCAD ELECTRICAL</option>
+                                            <option value="ETAP">ETAP</option>
+                                            <option value="MATLAB">MATLAB</option>
+                                            <option value="EMBEDDED SYSTEMS">EMBEDDED SYSTEMS</option>
+                                            @endif
+                                        </select>
                                     </div> <!-- singel form -->
                                 </div>
                                 <div class="col-md-12">
@@ -73,58 +109,6 @@
                         </form>
                     </div> <!-- main form -->
                 </div> <!--  contact from -->
-            </div>
-            <div class="col-lg-4">
-                <div class="contact-address">
-                    <div class="contact-heading">
-                        <h5>Address</h5>
-                        <p>If you have any further questions, please don’t hesitate to contact me.</p>
-                    </div>
-                    <ul>
-                        <li>
-                            <div class="singel-address">
-                                <div class="icon">
-                                    <i class="fa fa-home"></i>
-                                </div>
-                                <div class="cont">
-                                    <p>61, First floor, Anush complex, AMC road, Dindigul- 624001.</p>
-                                </div>
-                            </div> <!-- singel address -->
-                        </li>
-                        <li>
-                            <div class="singel-address">
-                                <div class="icon">
-                                    <i class="fa fa-phone"></i>
-                                </div>
-                                <div class="cont">
-                                    <p><a class="text-dark" href="tel:+91 99440 54898">+91 99440 54898</a></p>
-                                </div>
-                            </div> <!-- singel address -->
-                        </li>
-                        <li>
-                            <div class="singel-address">
-                                <div class="icon">
-                                    <i class="fa fa-envelope-o"></i>
-                                </div>
-                                <div class="cont">
-                                    <p><a class="text-dark" href="mailto:spotlighttechs@gmail.com">spotlighttechs@gmail.com</a></p>
-                                    <p><a class="text-dark" href="mailto:info@spotlighttechs.com">info@spotlighttechs.com</a></p>
-                                </div>
-                            </div> <!-- singel address -->
-                        </li>
-                        <li>
-                            <div class="singel-address">
-                                <div class="icon">
-                                    <i class="fa fa-globe"></i>
-                                </div>
-                                <div class="cont">
-                                    <p><a class="text-dark" href="https://www.spotlighttechs.com">www.spotlighttechs.com</a></p>
-                                </div>
-                            </div> <!-- singel address -->
-                        </li>
-                    </ul>
-                </div> <!-- contact address -->
-            
             </div>
         </div> <!-- row -->
     </div> <!-- container -->

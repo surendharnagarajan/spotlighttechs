@@ -44,7 +44,7 @@
                             </div>
                         </div>
                         <div class="button float-left">
-                            <a href="#" class="main-btn">Apply Now</a>
+                            <a href="{{ route('courses') }}" class="main-btn">Enquiry Courses</a>
                         </div>
                     </div>
                 </div>

@@ -17,9 +17,14 @@ use Illuminate\Support\Facades\Artisan;
 Route::get('/', 'PagesController@home')->name('home');
 Route::get('/about', 'PagesController@about')->name('about');
 Route::get('/courses', 'PagesController@courses')->name('courses');
+Route::get('/course/mechanical', 'PagesController@mechanical')->name('mechanical');
+Route::get('/course/civil', 'PagesController@civil')->name('civil');
+Route::get('/course/programming', 'PagesController@programming')->name('programming');
+Route::get('/enquiry/{course}', 'PagesController@enquiry')->name('enquiry');
+Route::post('/course-enquiry', 'PagesController@enquiryMail')->name('enquiry.mail');
 Route::get('/blog', 'PagesController@blog')->name('blog');
 Route::get('/contact', 'PagesController@contact')->name('contact');
-Route::post('/send-mail', 'PagesController@sendMail')->name('send.mail');
+Route::post('/send', 'PagesController@sendMail')->name('send.mail');
 
 // Clear
 Route::get('/clear-cache', function() {
