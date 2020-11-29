@@ -9,7 +9,7 @@
                         <div class="logo">
                             <a href="#"><img src="{{ asset('images/logo.png') }}" alt="Logo"></a>
                         </div>
-                        <p>Gravida nibh vel velit auctor aliquetn quibibendum auci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate.</p>
+                        <p>Spotlight Tech is committed for satisfying the needs and expectations of all stakeholders such as Students, Parents, Employees and the Society.</p>
                         <ul class="mt-20">
                             <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
                             <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
@@ -43,7 +43,7 @@
                         <ul>
                             <li><a href="#"><i class="fa fa-angle-right"></i>FAQS</a></li>
                             <li><a href="#"><i class="fa fa-angle-right"></i>Privacy</a></li>
-                            <li><a href="#"><i class="fa fa-angle-right"></i>Support</a></li>
+                            <li><a href="{{ route('contact') }}"><i class="fa fa-angle-right"></i>Support</a></li>
                         </ul>
                     </div> <!-- support -->
                 </div>

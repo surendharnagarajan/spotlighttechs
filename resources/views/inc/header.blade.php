@@ -66,19 +66,19 @@
                         <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
                             <ul class="navbar-nav mr-auto">
                                 <li class="nav-item">
-                                    <a class="active" href="{{ route('home') }}">Home</a>
+                                    <a class="{{ Request::is('/') ? 'active' : '' }}" href="{{ route('home') }}">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="{{ route('about') }}">About us</a>
+                                    <a class="{{ Request::is('about') ? 'active' : '' }}" href="{{ route('about') }}">About us</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="{{ route('courses') }}">Courses</a>
+                                    <a class="{{ Request::is('courses') ? 'active' : '' }}" href="{{ route('courses') }}">Courses</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="{{ route('blog') }}">Blog</a>
+                                    <a class="{{ Request::is('blog') ? 'active' : '' }}" href="{{ route('blog') }}">Blog</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="{{ route('contact') }}">Contact</a>
+                                    <a class="{{ Request::is('contact') ? 'active' : '' }}" href="{{ route('contact') }}">Contact</a>
                                 </li>
                             </ul>
                         </div>
