@@ -34,7 +34,7 @@
                         <div class="singel-course mt-30">
                             <div class="thum">
                                 <div class="image">
-                                    <img src="{{ asset('images/course/cu-1.jpg') }}" alt="Course">
+                                    <img src="{{ asset('images/course/cu-1.png') }}" alt="Course">
                                 </div>
                                 <div class="price">
                                     <span>Paid</span>
@@ -70,7 +70,7 @@
                         <div class="singel-course mt-30">
                             <div class="thum">
                                 <div class="image">
-                                    <img src="{{ asset('images/course/cu-2.jpg') }}" alt="Course">
+                                    <img src="{{ asset('images/course/cu-2.png') }}" alt="Course">
                                 </div>
                                 <div class="price">
                                     <span>Paid</span>
@@ -106,7 +106,7 @@
                         <div class="singel-course mt-30">
                             <div class="thum">
                                 <div class="image">
-                                    <img src="{{ asset('images/course/cu-3.jpg') }}" alt="Course">
+                                    <img src="{{ asset('images/course/cu-3.png') }}" alt="Course">
                                 </div>
                                 <div class="price">
                                     <span>Paid</span>

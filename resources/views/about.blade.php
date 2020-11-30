@@ -102,7 +102,7 @@
 
 <!--====== COUNTER PART ENDS ======-->
 
-<!--====== TEACHERS PART START ======-->
+{{-- <!--====== TEACHERS PART START ======-->
 
 <section id="teachers-part" class="pt-65 pb-120">
     <div class="container">
@@ -226,6 +226,6 @@
     </div> <!-- container -->
 </section>
 
-<!--====== TEASTIMONIAL PART ENDS ======-->
+<!--====== TEASTIMONIAL PART ENDS ======--> --}}
 
 @endsection

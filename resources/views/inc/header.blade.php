@@ -28,7 +28,7 @@
                 <div class="col-lg-4 col-md-4">
                     <div class="logo">
                         <a href="{{ route('home') }}">
-                            <img src="{{ asset('images/spotlight.png') }}" alt="Spotlight Tech">
+                            <img src="{{ asset('images/logo.png') }}" alt="Spotlight Tech">
                         </a>
                     </div>
                 </div>

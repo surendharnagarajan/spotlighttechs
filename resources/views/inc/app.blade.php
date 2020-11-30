@@ -64,6 +64,9 @@
 
     @include('sweetalert::alert')
 
+    <!--====== tidio js ======-->
+    <script src="//code.tidio.co/imywffehgdnr1wxzrnhtp47wsea0cut7.js" async></script>
+
     <!--====== jquery js ======-->
     <script src="{{ asset('js/vendor/modernizr-3.6.0.min.js') }}"></script>
     <script src="{{ asset('js/vendor/jquery-1.12.4.min.js') }}"></script>

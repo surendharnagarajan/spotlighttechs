@@ -45,7 +45,7 @@
                                             <img src="{{ asset('images/home/laptop-solid.svg') }}" width="500" height="100" alt="CSE / IT / EEE / ECE">
                                         </span>
                                         <span class="cont">
-                                            <span>CSE / IT / EEE / ECE</span>
+                                            <span>CSE/IT/EEE/ECE</span>
                                         </span>
                                     </span> <!-- singel category -->
                                 </a>
@@ -120,7 +120,7 @@
                     <div class="singel-course">
                         <div class="thum">
                             <div class="image">
-                                <img src="{{ asset('images/course/cu-1.jpg') }}" alt="Course">
+                                <img src="{{ asset('images/course/cu-1.png') }}" alt="Course">
                             </div>
                             <div class="price">
                                 <span>Paid</span>
@@ -160,7 +160,7 @@
                     <div class="singel-course">
                         <div class="thum">
                             <div class="image">
-                                <img src="{{ asset('images/course/cu-2.jpg') }}" alt="Course">
+                                <img src="{{ asset('images/course/cu-2.png') }}" alt="Course">
                             </div>
                             <div class="price">
                                 <span>Paid</span>
@@ -200,7 +200,7 @@
                     <div class="singel-course">
                         <div class="thum">
                             <div class="image">
-                                <img src="{{ asset('images/course/cu-3.jpg') }}" alt="Course">
+                                <img src="{{ asset('images/course/cu-3.png') }}" alt="Course">
                             </div>
                             <div class="price">
                                 <span>Paid</span>
@@ -248,10 +248,10 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 order-last order-lg-first">
-                    <div class="video text-lg-left text-center pt-50">
-                        <a class="Video-popup" href="https://www.youtube.com/watch?v=bRRtdzJH1oE"><i
+                    {{-- <div class="video text-lg-left text-center pt-50">
+                        <a class="Video-popup" href="#"><i
                                 class="fa fa-play"></i></a>
-                    </div> <!-- row -->
+                    </div> <!-- row --> --}}
                 </div>
                 <div class="col-lg-5 offset-lg-1 order-first order-lg-last">
                     <div class="feature pt-50">
@@ -265,7 +265,7 @@
                                         <img src="{{ asset('images/all-icon/f-1.png') }}" alt="icon">
                                     </div>
                                     <div class="cont">
-                                        <h4>Global Certificate</h4>
+                                        <h4>Certificate</h4>
                                         <p>Gravida nibh vel velit auctor aliquetn auci elit cons solliazcitudirem sem
                                             quibibendum sem nibhutis.</p>
                                     </div>
@@ -277,7 +277,7 @@
                                         <img src="{{ asset('images/all-icon/f-2.png') }}" alt="icon">
                                     </div>
                                     <div class="cont">
-                                        <h4>Alumni Support</h4>
+                                        <h4>Course Support</h4>
                                         <p>Gravida nibh vel velit auctor aliquetn auci elit cons solliazcitudirem sem
                                             quibibendum sem nibhutis.</p>
                                     </div>
@@ -289,7 +289,7 @@
                                         <img src="{{ asset('images/all-icon/f-3.png') }}" alt="icon">
                                     </div>
                                     <div class="cont">
-                                        <h4>Books & Library</h4>
+                                        <h4>Books</h4>
                                         <p>Gravida nibh vel velit auctor aliquetn auci elit cons solliazcitudirem sem
                                             quibibendum sem nibhutis.</p>
                                     </div>
@@ -305,7 +305,7 @@
 
     <!--====== VIDEO FEATURE PART ENDS ======-->
 
-    <!--====== TEACHERS PART START ======-->
+    {{-- <!--====== TEACHERS PART START ======-->
 
     <section id="teachers-part" class="pt-70 pb-120">
         <div class="container">
@@ -449,6 +449,6 @@
         </div> <!-- container -->
     </section>
 
-    <!--====== TEASTIMONIAL PART ENDS ======-->
+    <!--====== TEASTIMONIAL PART ENDS ======--> --}}
 
 @endsection

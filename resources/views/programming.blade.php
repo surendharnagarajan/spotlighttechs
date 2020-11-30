@@ -8,7 +8,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="page-banner-cont">
-                    <h2>CSE/IT/EEE/ECE Courses</h2>
+                    <h2>Program Courses</h2>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="{{ route('home') }}">Home</a></li>
@@ -70,7 +70,7 @@
                     </div> <!-- course terms -->
                     
                     <div class="corses-singel-image pt-50">
-                        <img src="{{ asset('images/course/cu-1.jpg') }}" alt="Courses">
+                        <img src="{{ asset('images/course/cu-1.png') }}" alt="Courses">
                     </div> <!-- corses singel image -->
                     
                     <div class="corses-tab mt-30">
@@ -143,8 +143,20 @@
                 <div class="row">
                     <div class="col-lg-12 col-md-6">
                         <div class="course-features mt-30">
-                            <h4>Course Features </h4>
+                            <h4>Course </h4>
+                            <br>
                             <ul>
+                                <li><h4>1. C, C++, JAVA</h4></li>
+                                <li><h4>2. PYTHON</h4></li>
+                                <li><h4>3. ARTIFICIAL INTELLIGENCE</h4></li>
+                                <li><h4>4. MACHINE LEARNING</h4></li>
+                                <li><h4>5. IOT</h4></li>
+                                <li><h4>6. CYPER SECURITY</h4></li>
+                                <li><h4>7. ETHICAL HACKING</h4></li>
+                                <li><h4>8. AUTOCAD ELECTRICAL</h4></li>
+                                <li><h4>9. ETAP</h4></li>
+                                <li><h4>10. MATLAB</h4></li>
+                                <li><h4>11. EMBEDDED SYSTEMS</h4></li>
                                 <li><i class="fa fa-clock-o"></i>Duaration : <span>0 Years</span></li>
                             </ul>
                             <div class="price-button pt-10">
@@ -166,7 +178,7 @@
                             <div class="singel-course mt-30">
                                 <div class="thum">
                                     <div class="image">
-                                        <img src="{{ asset('images/course/cu-1.jpg') }}" alt="Course">
+                                        <img src="{{ asset('images/course/cu-1.png') }}" alt="Course">
                                     </div>
                                     <div class="price">
                                         <span>Paid</span>
@@ -206,7 +218,7 @@
                             <div class="singel-course mt-30">
                                 <div class="thum">
                                     <div class="image">
-                                        <img src="{{ asset('images/course/cu-2.jpg') }}" alt="Course">
+                                        <img src="{{ asset('images/course/cu-2.png') }}" alt="Course">
                                     </div>
                                     <div class="price">
                                         <span>Paid</span>

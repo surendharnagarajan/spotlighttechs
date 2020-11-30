@@ -70,7 +70,7 @@
                     </div> <!-- course terms -->
                     
                     <div class="corses-singel-image pt-50">
-                        <img src="{{ asset('images/course/cu-1.jpg') }}" alt="Courses">
+                        <img src="{{ asset('images/course/cu-1.png') }}" alt="Courses">
                     </div> <!-- corses singel image -->
                     
                     <div class="corses-tab mt-30">
@@ -129,8 +129,18 @@
                 <div class="row">
                     <div class="col-lg-12 col-md-6">
                         <div class="course-features mt-30">
-                            <h4>Course Features </h4>
+                            <h2>Courses </h2>
+                            <br>
                             <ul>
+                                <li><h4>1. AUTOCAD</h4></li>
+                                <li><h4>2. CREO PARAMETRIC</h4></li>
+                                <li><h4>3. SOLIDWORKS</h4></li>
+                                <li><h4>4. PLASTIC MOLDING</h4></li>
+                                <li><h4>5. CATIA V5</h4></li>
+                                <li><h4>6. NX CAD</h4></li>
+                                <li><h4>7. NX CAM</h4></li>
+                                <li><h4>8. 3D PRINTING</h4></li>
+                                <li><h4>9. GD & T</h4></li>
                                 <li><i class="fa fa-clock-o"></i>Duaration : <span>0 Years</span></li>
                             </ul>
                             <div class="price-button pt-10">
@@ -152,7 +162,7 @@
                             <div class="singel-course mt-30">
                                 <div class="thum">
                                     <div class="image">
-                                        <img src="{{ asset('images/course/cu-2.jpg') }}" alt="Course">
+                                        <img src="{{ asset('images/course/cu-2.png') }}" alt="Course">
                                     </div>
                                     <div class="price">
                                         <span>Paid</span>
@@ -192,7 +202,7 @@
                             <div class="singel-course mt-30">
                                 <div class="thum">
                                     <div class="image">
-                                        <img src="{{ asset('images/course/cu-3.jpg') }}" alt="Course">
+                                        <img src="{{ asset('images/course/cu-3.png') }}" alt="Course">
                                     </div>
                                     <div class="price">
                                         <span>Paid</span>

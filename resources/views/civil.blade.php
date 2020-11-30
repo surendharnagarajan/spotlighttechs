@@ -70,7 +70,7 @@
                     </div> <!-- course terms -->
                     
                     <div class="corses-singel-image pt-50">
-                        <img src="{{ asset('images/course/cu-1.jpg') }}" alt="Courses">
+                        <img src="{{ asset('images/course/cu-1.png') }}" alt="Courses">
                     </div> <!-- corses singel image -->
                     
                     <div class="corses-tab mt-30">
@@ -129,8 +129,18 @@
                 <div class="row">
                     <div class="col-lg-12 col-md-6">
                         <div class="course-features mt-30">
-                           <h4>Course Features </h4>
-                            <ul>
+                           <h4>Courses </h4>
+                           <br>
+                           <ul>
+                                <li><h4>1. AUTOCAD</h4></li>
+                                <li><h4>2. REVIT ARCHITECTURE</h4></li>
+                                <li><h4>3. SKETCHUP</h4></li>
+                                <li><h4>4. 3DS MAX</h4></li>
+                                <li><h4>5. STAAD PRO</h4></li>
+                                <li><h4>6. ETABS</h4></li>
+                                <li><h4>7. MSP PPM</h4></li>
+                                <li><h4>8. PRIMAVERA P6</h4></li>
+                                <li><h4>9. LAND SURVEY</h4></li>
                                 <li><i class="fa fa-clock-o"></i>Duaration : <span>0 Years</span></li>
                             </ul>
                             <div class="price-button pt-10">
@@ -152,7 +162,7 @@
                             <div class="singel-course mt-30">
                                 <div class="thum">
                                     <div class="image">
-                                        <img src="{{ asset('images/course/cu-2.jpg') }}" alt="Course">
+                                        <img src="{{ asset('images/course/cu-1.png') }}" alt="Course">
                                     </div>
                                     <div class="price">
                                         <span>Paid</span>
@@ -166,9 +176,9 @@
                                         <li><i class="fa fa-star"></i></li>
                                         <li><i class="fa fa-star"></i></li>
                                     </ul>
-                                    <span>(29 Reviws)</span>
-                                    <a href="{{ route('civil') }}">
-                                        <h4>Civil Courses</h4>
+                                    <span>(42 Reviws)</span>
+                                    <a href="{{ route('mechanical') }}">
+                                        <h4>Mechanical Courses</h4>
                                     </a>
                                     <div class="course-teacher">
                                         <div class="thum">
@@ -181,7 +191,7 @@
                                         </div>
                                         <div class="admin">
                                             <ul>
-                                                <li><a href="#"><i class="fa fa-user"></i><span>534</span></a></li>
+                                                <li><a href="#"><i class="fa fa-user"></i><span>151</span></a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -192,7 +202,7 @@
                             <div class="singel-course mt-30">
                                 <div class="thum">
                                     <div class="image">
-                                        <img src="{{ asset('images/course/cu-3.jpg') }}" alt="Course">
+                                        <img src="{{ asset('images/course/cu-3.png') }}" alt="Course">
                                     </div>
                                     <div class="price">
                                         <span>Paid</span>
